@@ -1,0 +1,73 @@
+$size_title: 1.5em;
+$size_p: 1em;
+
+@mixin flex($disp, $just) {
+  display: $disp;
+  justify-content: $just;
+}
+
+h1 {
+  margin: 3% 0 2% 8%;
+}
+
+p {
+  font-size: $size_p;
+}
+
+form {
+  border: 1px solid black;
+  padding: 2%;
+  margin-left: 6%;
+  width: 350px;
+
+  legend {
+    @include flex (flex, center);
+    padding-bottom: 8%;
+    font-size: $size_title;
+  }
+
+  .datos {
+    padding: 5% 3% 5% 2%;
+
+    &__div {
+      @include flex (flex, flex-end);
+      padding: 2%;
+
+      input {
+        margin: 0 8% 2% 5%;
+      }
+    }
+
+    &__radios {
+      @include flex (flex, center);
+      padding-left: 10%;
+
+      input{
+        margin: 1% 0 4% 11%;
+      }
+    }
+  }
+
+  .boton {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 8% 1% 8% 1%;
+
+    &__borrar {
+      grid-area: 1/1/2/2;
+      @include flex (flex, center);
+      border: 1px, solid, black;
+      background-color: rgb(243, 93, 93);
+    }
+
+    &__calcular {
+      grid-area: 1/6/2/7;
+      @include flex (flex, center);
+      border: 1px, solid, black;
+      background-color: rgb(102, 219, 137);
+    }
+  }
+}
+
+

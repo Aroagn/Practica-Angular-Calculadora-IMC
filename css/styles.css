@@ -1,0 +1,50 @@
+table {
+  border: 1px solid black;
+  padding: 2%;
+  margin: 3%;
+}
+table caption {
+  padding-bottom: 5%;
+  font-size: 1.2em;
+}
+table tr, table td {
+  padding: 2%;
+}
+table tr input, table td input {
+  text-align: center;
+}
+table tr button, table td button {
+  margin: 5% 30% 0 30%;
+}
+table tr p, table td p {
+  font-size: 0.8em;
+}
+table tr div, table td div {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+table tr div .x, table td div .x {
+  grid-area: 1/1/2/2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+table tr div .ok, table td div .ok {
+  grid-area: 1/2/2/3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
