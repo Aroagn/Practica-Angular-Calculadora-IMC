@@ -21,7 +21,10 @@ export class DatosComponent {
     this.imc = 0;
   }
 
+  submitted = false;
+
   onSubmit() {
+    this.submitted = true;
   }
 
   calcularImc() {

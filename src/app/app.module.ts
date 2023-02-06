@@ -6,19 +6,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DatosComponent } from './datos/datos.component';
 import { CalcularComponent } from './calcular/calcular.component';
+import { TituloComponent } from './titulo/titulo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DatosComponent,
-    CalcularComponent
+    CalcularComponent,
+    TituloComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -30,8 +30,9 @@
   <fieldset class="boton">
     <button
       class="boton__borrar"
-      type="reset"
+      type="button"
       name="reset"
+      (click)="datosForm.reset()"
       >
       &#10006;
     </button>
@@ -40,6 +41,7 @@
       class="boton__calcular"
       type="submit"
       name="submit"
+      [disabled]="!datosForm.form.valid"
       (click)="calcularImc()"
       >
       &#10004;
@@ -48,16 +50,18 @@
 
   <fieldset class="resultado">
     <h4>Resultado:</h4>
+
     <div>
       <app-calcular
-        [nom]="nombre"
-        [sex]="sexo"
-        [alt]="altura"
-        [pes]="peso"
+        [nombre]="nombre"
+        [sexo]="sexo"
+        [altura]="altura"
+        [peso]="peso"
         [imc]="imc"
       >
       </app-calcular>
     </div>
   </fieldset>
 </form>
+
 

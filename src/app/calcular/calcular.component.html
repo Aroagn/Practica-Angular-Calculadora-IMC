@@ -1,26 +1,25 @@
 <div>
   <div *ngIf="(imc>=16) && (imc<18.50)">
-    <p>{{ nom }} tu IMC es de <strong>{{ imc | number}}</strong>/p>
-    <p>Se califica como <strong>bajo peso</strong>.</p>
+    <p>{{ nombre }} tu IMC es de <strong>{{ imc | number}}</strong></p>
+    <p>Se califica como <strong>bajo peso</strong> para {{ sexo }}.</p>
   </div>
 
   <div *ngIf="(imc>=18.50) && (imc<25)">
-    <p>{{ nom }} tu IMC es de <strong>{{ imc | number}}</strong></p>
-    <p>Se califica como <strong>peso normal</strong> para {{ sex }}.</p>
+    <p>{{ nombre }} tu IMC es de <strong>{{ imc | number}}</strong></p>
+    <p>Se califica como <strong>peso normal</strong> para {{ sexo }}.</p>
   </div>
 
   <div *ngIf="(imc>=25) && (imc<30)">
-    <p>{{ nom }} tu IMC es de <strong>{{ imc | number}}</strong></p>
-    <p>Se califica como <strong>sobrepeso</strong>.</p>
+    <p>{{ nombre }} tu IMC es de <strong>{{ imc | number}}</strong></p>
+    <p>Se califica como <strong>sobrepeso</strong> para {{ sexo }}.</p>
   </div>
 
   <div *ngIf="(imc>=30) && (imc<35)">
-    <p>{{ nom }} tu IMC es de <strong>{{ imc | number}}</strong></p>
-    <p>Se califica como <strong>obesidad leve</strong>.</p>
+    <p>{{ nombre }} tu IMC es de <strong>{{ imc | number}}</strong></p>
+    <p>Se califica como <strong>obesidad leve</strong> para {{ sexo }}.</p>
   </div>
 
   <div *ngIf="(imc>=35) && (imc<40)">
-    <p>{{ nom }} tu IMC es de <strong>{{ imc | number}}</strong></p>
-    <p>Se califica como <strong>obesidad media</strong>.</p>
-  </div>
+    <p>{{ nombre }} tu IMC es de <strong>{{ imc | number}}</strong></p>
+    <p>Se califica como <strong>obesidad media</strong> para {{ sexo }}.</p>
 </div>

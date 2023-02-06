@@ -1,5 +1,4 @@
-import { Component, Input, Output } from '@angular/core';
-import { Data } from '../data';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-calcular',
@@ -9,17 +8,17 @@ import { Data } from '../data';
 
 export class CalcularComponent {
 
-  @Input() nom: string;
-  @Input() sex: string;
-  @Input() alt: number;
-  @Input() pes: number;
+  @Input() nombre: string;
+  @Input() sexo: string;
+  @Input() altura: number;
+  @Input() peso: number;
   @Input() imc: number;
 
   constructor() {
-    this.nom = "";
-    this.sex = "";
-    this.alt = 0;
-    this.pes = 0;
+    this.nombre = "";
+    this.sexo = "";
+    this.altura = 0;
+    this.peso = 0;
     this.imc = 0;
   }
 }
